@@ -1,511 +1,675 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html class="light" lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Premium Brass Cable Glands & Components</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>VebX Industrial Systems | Precision Engineering</title>
+    <link rel="icon" type="image/png" href="image/logo1.png" />
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Manrope:wght@400;500;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Material Symbols -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface": "#fbf9f6",
+                        "surface-bright": "#fbf9f6",
+                        "surface-container-low": "#f5f3f0",
+                        "error": "#ba1a1a",
+                        "on-primary-container": "#858383",
+                        "on-primary-fixed": "#1c1b1b",
+                        "surface-container-highest": "#e4e2df",
+                        "tertiary-fixed": "#e6e1df",
+                        "background": "#fbf9f6",
+                        "tertiary-container": "#1d1b1a",
+                        "surface-tint": "#5f5e5e",
+                        "inverse-on-surface": "#f2f0ed",
+                        "on-secondary-fixed-variant": "#5d4200",
+                        "on-primary-fixed-variant": "#474646",
+                        "secondary": "#7b5800",
+                        "tertiary-fixed-dim": "#cac6c3",
+                        "on-surface-variant": "#444748",
+                        "on-secondary-fixed": "#271900",
+                        "primary-fixed-dim": "#c8c6c5",
+                        "on-tertiary-fixed-variant": "#484645",
+                        "error-container": "#ffdad6",
+                        "outline": "#747878",
+                        "on-secondary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary": "#000000",
+                        "surface-container": "#efeeeb",
+                        "primary-container": "#1c1b1b",
+                        "on-tertiary-fixed": "#1d1b1a",
+                        "secondary-container": "#fdc34d",
+                        "surface-container-high": "#eae8e5",
+                        "on-error": "#ffffff",
+                        "secondary-fixed-dim": "#f7bd48",
+                        "on-error-container": "#93000a",
+                        "primary-fixed": "#e5e2e1",
+                        "on-surface": "#1b1c1a",
+                        "outline-variant": "#c4c7c7",
+                        "on-primary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "surface-variant": "#e4e2df",
+                        "on-secondary-container": "#715000",
+                        "on-background": "#1b1c1a",
+                        "inverse-primary": "#c8c6c5",
+                        "inverse-surface": "#30312f",
+                        "on-tertiary-container": "#868381",
+                        "secondary-fixed": "#ffdea6",
+                        "primary": "#000000",
+                        "surface-dim": "#dbdad7"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        .brand-font {
+            font-family: 'Manrope', sans-serif;
+        }
+
+        /* Dropdown styling */
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+    </style>
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true"
-    tabindex="0">
-
-    <!-- Grain Overlay -->
-    <div class="grain-overlay"></div>
-
-    <!-- Navbar -->
-    <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="#hero">
-                <i class="fa-solid fa-industry text-primary-custom me-2"></i>VebX
+<body class="bg-surface text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
+    <!-- TopNavBar -->
+    <nav
+        class="fixed top-0 w-full z-50 bg-[#fbf9f6]/80 backdrop-blur-3xl shadow-[0_32px_64px_-4px_rgba(27,28,26,0.08)]">
+        <div class="flex items-center justify-between px-12 py-4 max-w-[1920px] mx-auto">
+            <a href="index.html" class="flex items-center group">
+                <img src="image/logo.png" alt="VebX Logo"
+                    class="h-32 w-auto -my-10 mix-blend-multiply transition-transform duration-300 group-hover:scale-[1.02]" />
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#hero">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#why-choose-us">Why Choose Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#products">Products</a>
-                    </li>
-                    <li class="nav-item ms-lg-3">
-                        <a class="btn btn-primary-custom px-4" href="#inquiry">Get a Quote</a>
-                    </li>
-                </ul>
+            <div class="hidden md:flex items-center gap-10">
+                <a class="font-['Manrope'] font-medium tracking-tight text-sm text-[#0f0f0f]/60 hover:text-[#0f0f0f] transition-colors duration-300"
+                    href="index.html" style="">Home</a>
+                <a class="font-['Manrope'] font-medium tracking-tight text-sm text-[#0f0f0f]/60 hover:text-[#0f0f0f] transition-colors duration-300"
+                    href="products.html" style="">Products</a>
+                <a class="font-['Manrope'] font-medium tracking-tight text-sm text-[#0f0f0f]/60 hover:text-[#0f0f0f] transition-colors duration-300"
+                    href="#about" style="">About VebX</a>
+                <a class="font-['Manrope'] font-medium tracking-tight text-sm text-[#0f0f0f]/60 hover:text-[#0f0f0f] transition-colors duration-300"
+                    href="#why" style="">Why Us</a>
+                <a class="font-['Manrope'] font-medium tracking-tight text-sm text-[#0f0f0f]/60 hover:text-[#0f0f0f] transition-colors duration-300"
+                    href="#inquiry" style="">Contact</a>
+            </div>
+            <div class="flex items-center gap-6">
+                <a class="bg-primary text-on-primary px-6 py-2.5 rounded-lg text-sm font-bold tracking-tight hover:scale-95 duration-200 transition-all ease-in-out"
+                    href="#inquiry" style="">
+                    Get a Quote →
+                </a>
             </div>
         </div>
     </nav>
+    <main class="pt-24">
+        <!-- Hero Section -->
+        <section class="max-w-[1920px] mx-auto px-12 py-20 flex flex-col lg:flex-row gap-16 lg:gap-20 items-center">
+            <div class="w-full lg:w-[40%] space-y-12">
+                <div class="space-y-6">
+                    <span
+                        class="inline-block bg-surface-container-highest px-3 py-1 rounded text-[10px] font-bold tracking-[0.2em] uppercase"
+                        style="">Industry 4.0 Standard</span>
+                    <h1 class="text-7xl font-extrabold tracking-tighter leading-[0.95] text-primary" style="">Precision
+                        <br /> Machined <br /> Excellence.
+                    </h1>
+                    <p class="text-xl text-on-surface-variant max-w-lg leading-relaxed" style="">High-performance
+                        industrial systems and components engineered for absolute reliability in extreme environments.
+                    </p>
+                </div>
+            </div>
+            <!-- Visual Panel -->
+            <div class="w-full lg:w-[60%] relative">
+                <div
+                    class="aspect-video bg-surface-container-low rounded-2xl overflow-hidden relative group shadow-2xl">
+                    <video autoplay loop muted playsinline disablePictureInPicture
+                        class="w-full h-full object-cover grayscale contrast-125 group-hover:scale-105 transition-transform duration-700 pointer-events-none">
+                        <source src="video/1.mp4" type="video/mp4">
+                    </video>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero-section d-flex align-items-center">
-        <div class="container text-center text-md-start">
-            <div class="row align-items-center">
-                <div class="col-lg-6 hero-text">
-                    <span class="badge bg-soft-primary text-primary-custom mb-3 px-3 py-2 rounded-pill">Premium
-                        Manufacturing</span>
-                    <h1 class="display-4 fw-bold mb-4">Precision Engineered <span class="text-primary-custom">Brass
-                            Cable Glands</span></h1>
-                    <p class="lead mb-5 text-muted">High-quality components designed for durability, safety, and peak
-                        performance in demanding industrial applications.</p>
-                    <div class="d-flex justify-content-center justify-content-md-start gap-3">
-                        <a href="#products" class="btn btn-outline-dark btn-lg px-4">View Products</a>
-                        <a href="#inquiry" class="btn btn-primary-custom btn-lg px-4 shadow-sm">Inquire Now</a>
+                </div>
+            </div>
+        </section>
+        <!-- Certificate Strip -->
+        <section class="bg-surface-container-low py-12">
+            <div
+                class="max-w-[1920px] mx-auto px-12 flex flex-wrap items-center justify-between gap-10 opacity-40 hover:opacity-80 transition-opacity">
+                <span class="text-xs font-bold tracking-[0.3em] uppercase whitespace-nowrap" style="">ISO
+                    9001:2015</span>
+                <span class="text-xs font-bold tracking-[0.3em] uppercase whitespace-nowrap" style="">CE
+                    CERTIFIED</span>
+                <span class="text-xs font-bold tracking-[0.3em] uppercase whitespace-nowrap" style="">TÜV SÜD
+                    APPROVED</span>
+                <span class="text-xs font-bold tracking-[0.3em] uppercase whitespace-nowrap" style="">ASME SECTION
+                    VIII</span>
+                <span class="text-xs font-bold tracking-[0.3em] uppercase whitespace-nowrap" style="">ATEX EXPLOSION
+                    PROOF</span>
+            </div>
+        </section>
+        <!-- About Us Section (21st.dev Style Bento) -->
+        <section class="max-w-[1920px] mx-auto px-4 md:px-12 py-32" id="about">
+            <div class="mb-20 flex flex-col items-center text-center space-y-6">
+                <span class="text-xs font-bold uppercase tracking-[0.3em] text-secondary">Who We Are</span>
+                <h2 class="text-5xl md:text-6xl font-extrabold tracking-tighter" style="">About VebX</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto">
+                <!-- Large Story Card -->
+                <div
+                    class="col-span-1 md:col-span-2 relative bg-[#0a0a0a] rounded-[2rem] p-10 md:p-14 border border-white/5 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.3)] overflow-hidden group hover:border-white/10 transition-colors duration-500">
+                    <div
+                        class="absolute top-0 right-0 w-96 h-96 bg-secondary-container/10 rounded-full blur-[100px] pointer-events-none transition-transform duration-1000 group-hover:scale-125 group-hover:-translate-x-10 group-hover:translate-y-10">
+                    </div>
+                    <div class="relative z-10 space-y-8 h-full flex flex-col justify-center">
+                        <div
+                            class="inline-flex items-center gap-3 bg-white/5 border border-white/10 px-4 py-2 rounded-full w-fit backdrop-blur-md">
+                            <span
+                                class="w-2 h-2 rounded-full bg-secondary-container animate-pulse shadow-[0_0_10px_#fdc34d]"></span>
+                            <span class="text-[10px] font-bold uppercase tracking-widest text-[#fdc34d] font-mono">EST.
+                                2002</span>
+                        </div>
+                        <h3
+                            class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tighter text-white leading-[1.1]">
+                            Crafting Excellence in <br /> <span
+                                class="text-transparent bg-clip-text bg-gradient-to-r from-white to-[#fdc34d]">Copper
+                                Alloys.</span>
+                        </h3>
+                        <p class="text-white/50 text-base md:text-lg leading-relaxed max-w-xl">
+                            VebX Metal Pvt Ltd is a leading manufacturer of a wide range of Copper Alloys Products,
+                            Precision Components, Accessories, and Spares. With over two decades of industry expertise,
+                            we have built a reputation for delivering outstanding quality that truly sets us apart from
+                            the competition.
+                        </p>
                     </div>
                 </div>
-                <div class="col-lg-6 mt-5 mt-lg-0">
-                    <!-- A stylized placeholder image container to look premium -->
-                    <div class="hero-image-wrapper p-4 rounded-4 position-relative tooltip-placeholder float-animation">
-                        <div class="placeholder-overlay d-flex flex-column justify-content-center align-items-center text-muted rounded-3 bg-light"
-                            style="height: 400px;">
-                            <i class="fa-solid fa-image fa-3x mb-3 text-secondary"></i>
-                            <h5 class="fw-bold">Hero Image Placeholder</h5>
-                            <p class="small">Upload your high-res facility or product banner here.</p>
+
+                <!-- Bento Small Cards -->
+                <div class="col-span-1 flex flex-col gap-6">
+                    <!-- Setup Card 1 -->
+                    <div
+                        class="flex-1 relative bg-[#0a0a0a] rounded-[2rem] p-8 border border-white/5 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.3)] overflow-hidden group hover:border-white/10 transition-colors duration-500 flex flex-col justify-end">
+                        <div
+                            class="absolute inset-0 opacity-10 group-hover:opacity-20 transition-opacity duration-700 bg-[linear-gradient(45deg,transparent_25%,rgba(255,255,255,0.05)_50%,transparent_75%,transparent_100%)] bg-[length:4px_4px] pointer-events-none">
+                        </div>
+                        <div
+                            class="absolute -bottom-10 -right-10 w-40 h-40 bg-secondary/20 rounded-full blur-[50px] pointer-events-none transition-transform duration-1000 group-hover:scale-150">
+                        </div>
+
+                        <div class="relative z-10">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center backdrop-blur-md mb-6 shadow-inner transition-transform group-hover:-translate-y-1">
+                                <span class="material-symbols-outlined text-secondary-container text-xl">verified</span>
+                            </div>
+                            <h4 class="text-xl font-bold text-white mb-2 tracking-tight">Strict Quality Control</h4>
+                            <p class="text-sm text-white/50 leading-relaxed max-w-[200px]">Rigorous processes ensuring
+                                perfect compliance.</p>
+                        </div>
+                    </div>
+
+                    <!-- Setup Card 2 -->
+                    <div
+                        class="flex-1 relative bg-gradient-to-br from-[#1a1a1a] to-[#0a0a0a] rounded-[2rem] p-8 border border-white/5 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.3)] overflow-hidden group hover:border-secondary/20 transition-colors duration-500 flex flex-col justify-end">
+                        <div
+                            class="absolute w-full h-full inset-0 bg-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none">
+                        </div>
+
+                        <div class="relative z-10">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-secondary-container/10 border border-secondary-container/20 flex items-center justify-center backdrop-blur-md mb-6 shadow-inner transition-transform group-hover:-translate-y-1">
+                                <span class="material-symbols-outlined text-secondary-container text-xl">public</span>
+                            </div>
+                            <h4 class="text-xl font-bold text-white mb-2 tracking-tight">Global Supply Chain</h4>
+                            <p class="text-sm text-white/50 leading-relaxed max-w-[200px]">Robust capabilities scaled
+                                for worldwide delivery.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- About Us Section -->
-    <section id="about" class="py-5 bg-white">
-        <div class="container py-5">
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 mb-lg-0 pe-lg-5">
-                    <div class="placeholder-wrapper rounded-4 shadow-sm overflow-hidden tooltip-placeholder">
-                        <div class="placeholder-overlay d-flex flex-column justify-content-center align-items-center text-muted bg-light"
-                            style="height: 350px;">
-                            <i class="fa-solid fa-users fa-3x mb-3 text-secondary"></i>
-                            <h5 class="fw-bold">Company Image Placeholder</h5>
-                            <p class="small">Upload an image of your team or facility here.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <h6 class="text-primary-custom fw-bold text-uppercase tracking-wider mb-2">About Us</h6>
-                    <h2 class="fw-bold mb-4">Crafting Excellence in Copper Alloys Since 2002</h2>
-                    <p class="text-muted mb-4">Established in 2002, VebX Metal Pvt Ltd is a leading manufacturer of a
-                        wide range of Copper Alloys Products, Precision Components, Accessories, and Spares. With over
-                        two decades of industry expertise, we have built a reputation for delivering outstanding quality
-                        that truly sets us apart from the competition.</p>
-                    <ul class="list-unstyled">
-                        <li class="mb-3 d-flex align-items-center"><i
-                                class="fa-solid fa-check-circle text-primary-custom me-3 fs-5"></i> <span
-                                class="fw-medium">Strict Quality Control Processes</span></li>
-                        <li class="d-flex align-items-center"><i
-                                class="fa-solid fa-check-circle text-primary-custom me-3 fs-5"></i> <span
-                                class="fw-medium">Global Supply Chain Capabilities</span></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Us Section -->
-    <section id="why-choose-us" class="py-5 bg-light">
-        <div class="container py-5">
-            <div class="text-center mb-5">
-                <h6 class="text-primary-custom fw-bold text-uppercase tracking-wider mb-2">Why Choose Us</h6>
-                <h2 class="fw-bold mb-4">Why We're Your Best Choice</h2>
-                <div class="row justify-content-center">
-                    <div class="col-lg-10">
-                        <p class="text-muted mb-3">At VebX Metal Pvt Ltd, we take pride in being a trusted manufacturer
-                            and exporter of high-quality brass cable glands for global markets. With decades of
-                            experience and a commitment to excellence, we ensure our products meet the highest standards
-                            of durability, safety, and performance. Our expertise in brass manufacturing, combined with
-                            advanced technology and rigorous quality checks, guarantees precision-engineered cable
-                            glands that excel in various industrial applications.</p>
-                        <p class="text-muted mb-0">We prioritize customer satisfaction through reliable delivery,
-                            competitive pricing, and tailored solutions that meet specific project needs. From custom
-                            designs to bulk orders, we are dedicated to delivering exceptional value and building
-                            long-term partnerships with our clients. When you choose us, you're choosing quality,
-                            reliability, and a team committed to supporting your success in every way.</p>
-                    </div>
-                </div>
+        </section>
+        <!-- Product Family Cards (Restyled Product Section) -->
+        <section class="max-w-[1920px] mx-auto px-4 md:px-12 py-32" id="products">
+            <div class="mb-20 flex flex-col items-center text-center space-y-6">
+                <span class="text-xs font-bold uppercase tracking-[0.3em] text-secondary">Discover</span>
+                <h2 class="text-5xl md:text-6xl font-extrabold tracking-tighter" style="">Our Products</h2>
             </div>
 
-            <div class="row g-4 pt-3">
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 border-0 shadow-sm p-4 hover-lift"
-                        style="border-left: 4px solid var(--primary-custom) !important;">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="icon-box rounded-circle d-flex align-items-center justify-content-center bg-soft-primary text-primary-custom flex-shrink-0"
-                                style="width: 56px; height: 56px;">
-                                <i class="fa-solid fa-award fa-lg"></i>
-                            </div>
-                            <h5 class="fw-bold mb-0 ms-3">Superior Quality Products</h5>
-                        </div>
-                        <p class="text-muted mb-0 small">Every product undergoes rigorous quality checks to meet the
-                            highest international standards.</p>
-                    </div>
+            <div
+                class="relative w-full max-w-7xl mx-auto rounded-[2.5rem] bg-gradient-to-br from-[#1c1b1b] via-[#0a0a0a] to-[#111111] p-[1px] shadow-[0_32px_64px_-16px_rgba(27,28,26,0.2)] overflow-hidden group">
+                <!-- Subtle Animated Glow Line Behind -->
+                <div
+                    class="absolute inset-0 bg-gradient-to-r from-transparent via-secondary/30 to-transparent -translate-x-[150%] group-hover:animate-[shimmer_2s_infinite] pointer-events-none">
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 border-0 shadow-sm p-4 hover-lift"
-                        style="border-left: 4px solid var(--primary-custom) !important;">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="icon-box rounded-circle d-flex align-items-center justify-content-center bg-soft-primary text-primary-custom flex-shrink-0"
-                                style="width: 56px; height: 56px;">
-                                <i class="fa-solid fa-sliders fa-lg"></i>
-                            </div>
-                            <h5 class="fw-bold mb-0 ms-3">Customization Options</h5>
-                        </div>
-                        <p class="text-muted mb-0 small">Tailored solutions designed to meet your specific project
-                            requirements and specifications.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 border-0 shadow-sm p-4 hover-lift"
-                        style="border-left: 4px solid var(--primary-custom) !important;">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="icon-box rounded-circle d-flex align-items-center justify-content-center bg-soft-primary text-primary-custom flex-shrink-0"
-                                style="width: 56px; height: 56px;">
-                                <i class="fa-solid fa-user-tie fa-lg"></i>
-                            </div>
-                            <h5 class="fw-bold mb-0 ms-3">Expertise & Experience</h5>
-                        </div>
-                        <p class="text-muted mb-0 small">Decades of specialized knowledge in brass manufacturing and
-                            precision engineering.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 border-0 shadow-sm p-4 hover-lift"
-                        style="border-left: 4px solid var(--primary-custom) !important;">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="icon-box rounded-circle d-flex align-items-center justify-content-center bg-soft-primary text-primary-custom flex-shrink-0"
-                                style="width: 56px; height: 56px;">
-                                <i class="fa-solid fa-tags fa-lg"></i>
-                            </div>
-                            <h5 class="fw-bold mb-0 ms-3">Competitive Pricing</h5>
-                        </div>
-                        <p class="text-muted mb-0 small">Best-in-class pricing without compromising on material quality
-                            or craftsmanship.</p>
-                    </div>
-                </div>
+                <style>
+                    @keyframes shimmer {
+                        100% {
+                            transform: translateX(150%);
+                        }
+                    }
+                </style>
 
-
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 border-0 shadow-sm p-4 hover-lift"
-                        style="border-left: 4px solid var(--primary-custom) !important;">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="icon-box rounded-circle d-flex align-items-center justify-content-center bg-soft-primary text-primary-custom flex-shrink-0"
-                                style="width: 56px; height: 56px;">
-                                <i class="fa-solid fa-globe fa-lg"></i>
-                            </div>
-                            <h5 class="fw-bold mb-0 ms-3">Global Reach</h5>
+                <a href="products.html"
+                    class="relative z-10 flex flex-col md:flex-row bg-[#0a0a0a] rounded-[2.5rem] overflow-hidden hover:shadow-[0_0_80px_-15px_rgba(253,195,77,0.1)] transition-all duration-700">
+                    <!-- Text Content -->
+                    <div
+                        class="p-10 md:p-16 lg:p-20 flex-1 flex flex-col justify-center relative overflow-hidden md:overflow-visible">
+                        <!-- Decorative bg element -->
+                        <div
+                            class="absolute -top-32 -left-32 w-96 h-96 bg-secondary/10 rounded-full blur-[100px] pointer-events-none transition-transform duration-1000 group-hover:scale-150 group-hover:-translate-x-10 group-hover:translate-y-10">
                         </div>
-                        <p class="text-muted mb-0 small">Serving clients across continents with dependable supply chain
-                            and export capabilities.</p>
+
+                        <div class="flex items-center gap-4 mb-10 z-10">
+                            <div
+                                class="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center backdrop-blur-md shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)] group-hover:bg-white/10 transition-colors duration-500">
+                                <span class="material-symbols-outlined text-secondary-container text-2xl"
+                                    style="">diamond</span>
+                            </div>
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-[0.2em] text-white/50 ring-1 ring-white/10 px-4 py-2 rounded-full bg-white/5 backdrop-blur-md">Industrial
+                                Catalog</span>
+                        </div>
+
+                        <h3
+                            class="z-10 text-4xl sm:text-5xl lg:text-7xl font-extrabold mb-6 tracking-tighter text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-[#fdc34d] transition-all duration-500 leading-[1.1]">
+                            Precision<br />Engineered Parts.
+                        </h3>
+                        <p class="z-10 text-white/50 text-base md:text-lg leading-relaxed mb-12 max-w-sm">
+                            Discover our full lineup of advanced termination solutions and bespoke precision components
+                            designed for extreme environments.
+                        </p>
+
+                        <div
+                            class="z-10 inline-flex items-center gap-4 bg-white/5 hover:bg-white/10 border border-white/10 px-8 py-4 rounded-full transition-all duration-300 w-fit backdrop-blur-md select-none group/btn">
+                            <span class="text-xs md:text-sm font-bold text-white uppercase tracking-[0.15em]">View All
+                                Products</span>
+                            <div
+                                class="w-8 h-8 rounded-full bg-secondary-container text-[#0a0a0a] flex items-center justify-center group-hover/btn:scale-110 transition-transform">
+                                <span class="material-symbols-outlined text-sm font-bold" style="">arrow_forward</span>
+                            </div>
+                        </div>
                     </div>
+
+                    <!-- Visual Image Side -->
+                    <div
+                        class="relative w-full md:w-[45%] lg:w-[50%] h-80 sm:h-96 md:h-auto shrink-0 border-t md:border-t-0 md:border-l border-white/5 overflow-hidden">
+                        <!-- Blend Gradients -->
+                        <div
+                            class="hidden md:block absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-[#0a0a0a] to-transparent z-10 pointer-events-none transition-opacity duration-700 opacity-100 group-hover:opacity-40">
+                        </div>
+                        <div
+                            class="md:hidden absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-[#0a0a0a] to-transparent z-10 pointer-events-none transition-opacity duration-700 opacity-100 group-hover:opacity-40">
+                        </div>
+
+                        <img alt="Products"
+                            class="w-full h-full object-cover object-center mix-blend-luminosity opacity-40 group-hover:opacity-100 group-hover:mix-blend-normal group-hover:scale-105 transition-all duration-1000 ease-[cubic-bezier(0.25,0.46,0.45,0.94)]"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9j2stneRzji-iAL4M8SLijCP1QNhjUhMYOJSbjr4aRzIXn2ayYYwswsn0DL1pIN4Zw2tm9p40NAnylSCh21Y_XrbVLORKWs_pf8SVeiVMvXJniWqHmbwmvXVIw_vz9tOQXoz3zgYRMwBZgXLAby-IFOENNim_RXSAoi54zp6ACQpbt75N8QHyX1X6fTAsZd2PfOuz-nyLVFORI5K3T30yqYjut6E5YQKYj0u3qKQnk_-eq0xIxHGOiw6rpLLESpQxv-wBCtvmnRmR" />
+                    </div>
+                </a>
+            </div>
+        </section>
+        <!-- Why Us Grid -->
+        <section class="bg-surface-container-low py-32 px-12" id="why">
+            <div class="max-w-[1920px] mx-auto">
+                <div class="mb-20 space-y-6">
+                    <h2 class="text-5xl font-extrabold tracking-tighter" style="">Why VebX?</h2>
+                    <p class="text-xl text-on-surface-variant max-w-2xl" style="">Our advantage lies in the intersection
+                        of material science and digital oversight.</p>
                 </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 border-0 shadow-sm p-4 hover-lift"
-                        style="border-left: 4px solid var(--primary-custom) !important;">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="icon-box rounded-circle d-flex align-items-center justify-content-center bg-soft-primary text-primary-custom flex-shrink-0"
-                                style="width: 56px; height: 56px;">
-                                <i class="fa-solid fa-star fa-lg"></i>
-                            </div>
-                            <h5 class="fw-bold mb-0 ms-3">Strong Reputation</h5>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Why Us Cards -->
+                    <div class="bg-[#1c1b1b] p-10 rounded-2xl border border-white/5 space-y-8">
+                        <div class="w-12 h-12 rounded-lg border border-secondary/50 flex items-center justify-center">
+                            <span class="material-symbols-outlined text-secondary-container"
+                                style='font-variation-settings: "FILL" 0, "wght" 300;'>star</span>
                         </div>
-                        <p class="text-muted mb-0 small">Trusted by clients worldwide for consistent quality and
-                            reliable business partnerships.</p>
+                        <div class="space-y-4">
+                            <h3 class="text-xl font-bold text-white" style="">Tight Tolerances</h3>
+                            <p class="text-sm text-white/60 leading-relaxed" style="">CNC turned and milled to ±0.01mm
+                                accuracy, meeting the most demanding industrial specifications.</p>
+                        </div>
                     </div>
+
+                    <div class="bg-[#1c1b1b] p-10 rounded-2xl border border-white/5 space-y-8">
+                        <div class="w-12 h-12 rounded-lg border border-secondary/50 flex items-center justify-center">
+                            <span class="material-symbols-outlined text-secondary-container"
+                                style='font-variation-settings: "FILL" 0, "wght" 300;'>schedule</span>
+                        </div>
+                        <div class="space-y-4">
+                            <h3 class="text-xl font-bold text-white" style="">Fast Turnaround</h3>
+                            <p class="text-sm text-white/60 leading-relaxed" style="">Rapid prototyping and production
+                                with responsive lead times — even for complex custom geometries.</p>
+                        </div>
+                    </div>
+                    <div class="bg-[#1c1b1b] p-10 rounded-2xl border border-white/5 space-y-8">
+                        <div class="w-12 h-12 rounded-lg border border-secondary/50 flex items-center justify-center">
+                            <span class="material-symbols-outlined text-secondary-container"
+                                style='font-variation-settings: "FILL" 0, "wght" 300;'>notes</span>
+                        </div>
+                        <div class="space-y-4">
+                            <h3 class="text-xl font-bold text-white" style="">Blueprint-to-Part</h3>
+                            <p class="text-sm text-white/60 leading-relaxed" style="">Send us your drawings and we
+                                handle the rest — from material sourcing to finishing and delivery.</p>
+                        </div>
+                    </div>
+                    <div class="bg-[#1c1b1b] p-10 rounded-2xl border border-white/5 space-y-8">
+                        <div class="w-12 h-12 rounded-lg border border-secondary/50 flex items-center justify-center">
+                            <span class="material-symbols-outlined text-secondary-container"
+                                style='font-variation-settings: "FILL" 0, "wght" 300;'>center_focus_strong</span>
+                        </div>
+                        <div class="space-y-4">
+                            <h3 class="text-xl font-bold text-white" style="">Material Expertise</h3>
+                            <p class="text-sm text-white/60 leading-relaxed" style="">Specialists in free-cutting brass
+                                IS319, leaded brass, and alloys for electrical and mechanical use.</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Products Section -->
-    <section id="products" class="py-5 bg-white">
-        <div class="container py-5">
-            <div class="text-center mb-5">
-                <h6 class="text-primary-custom fw-bold text-uppercase tracking-wider mb-2">Our Offerings</h6>
-                <h2 class="fw-bold">Featured Products</h2>
-                <p class="text-muted max-w-md mx-auto mt-3">Explore our core range of items. We also handle specialized
-                    inquiries for custom part development.</p>
-            </div>
-
-            <div class="row g-4">
-                <!-- Product 1 -->
-                <div class="col-lg-6">
-                    <a href="cable-glands.html" class="text-decoration-none">
-                        <div class="product-card card border-0 shadow-sm overflow-hidden h-100 p-2 hover-lift">
-                            <div class="placeholder-overlay d-flex flex-column justify-content-center align-items-center text-muted bg-light rounded"
-                                style="height: 250px;">
-                                <i class="fa-solid fa-plug fa-3x mb-3 text-secondary"></i>
-                                <span class="small fw-medium">Upload Brass Gland Image 1</span>
+        </section>
+        <!-- Request a Quote (New Styled Inquiry Form) -->
+        <section class="bg-[#f2f0ed] py-32 px-12" id="inquiry">
+            <div class="max-w-[1400px] mx-auto flex flex-col lg:flex-row gap-20">
+                <!-- Left Column: Content -->
+                <div class="lg:w-1/2 space-y-10">
+                    <div class="space-y-4">
+                        <h5 class="text-secondary font-bold text-sm tracking-[0.2em] uppercase" style="">Get in Touch
+                        </h5>
+                        <h2 class="text-7xl font-extrabold tracking-tighter text-primary uppercase" style="">Request a
+                            Quote</h2>
+                        <p class="text-on-surface-variant text-xl leading-relaxed max-w-md" style="">Tell us what you
+                            need — product type, quantity, specs. We respond within 24 hours.</p>
+                    </div>
+                    <div class="space-y-6 max-w-xl">
+                        <!-- Address Card -->
+                        <div class="bg-white border border-secondary/20 p-8 rounded-xl flex gap-6 shadow-sm">
+                            <div
+                                class="w-12 h-12 bg-surface-container-low rounded-lg flex items-center justify-center flex-shrink-0">
+                                <span class="material-symbols-outlined text-on-surface-variant"
+                                    style='font-variation-settings: "wght" 300;'>location_on</span>
                             </div>
-                            <div class="card-body mt-3">
-                                <h4 class="card-title fw-bold text-dark">Brass Cable Glands (Industrial)</h4>
-                                <p class="card-text text-muted">High-grade brass glands providing excellent strain
-                                    relief
-                                    and tight sealing for unarmored and armored cables.</p>
-                                <span class="btn btn-outline-primary-custom btn-sm rounded-pill px-3">Click to see
-                                    varieties</span>
+                            <div class="space-y-1">
+                                <span
+                                    class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant opacity-60"
+                                    style="">Address</span>
+                                <p class="font-bold text-primary leading-tight" style="">Plot No. K1-530-B, G.I.D.C,
+                                    Phase - II, Dared, Jamnagar, Gujarat 361004</p>
                             </div>
                         </div>
-                    </a>
+                        <!-- Email Card -->
+                        <div class="bg-white border border-outline-variant/30 p-8 rounded-xl flex gap-6 shadow-sm">
+                            <div
+                                class="w-12 h-12 bg-surface-container-low rounded-lg flex items-center justify-center flex-shrink-0">
+                                <span class="material-symbols-outlined text-on-surface-variant"
+                                    style='font-variation-settings: "wght" 300;'>mail</span>
+                            </div>
+                            <div class="space-y-1">
+                                <span
+                                    class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant opacity-60"
+                                    style="">Email</span>
+                                <p class="font-bold text-primary" style="">vebxbrassproducts@gmail.com</p>
+                                <p class="text-xs text-on-surface-variant opacity-60" style="">We respond within 24
+                                    hours</p>
+                            </div>
+                        </div>
+                        <!-- Phone Card -->
+                        <div class="bg-white border border-outline-variant/30 p-8 rounded-xl flex gap-6 shadow-sm">
+                            <div
+                                class="w-12 h-12 bg-surface-container-low rounded-lg flex items-center justify-center flex-shrink-0">
+                                <span class="material-symbols-outlined text-on-surface-variant"
+                                    style='font-variation-settings: "wght" 300;'>call</span>
+                            </div>
+                            <div class="space-y-1">
+                                <span
+                                    class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant opacity-60"
+                                    style="">Phone</span>
+                                <p class="font-bold text-primary" style="">+91 97730 56458<br />+91 94286 71098</p>
+                                <p class="text-xs text-on-surface-variant opacity-60" style="">Mon–Sat, 9am–6pm IST</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!-- Product 2 -->
-                <div class="col-lg-6">
-                    <a href="custom-brass-components.html" class="text-decoration-none">
-                        <div class="product-card card border-0 shadow-sm overflow-hidden h-100 p-2 hover-lift">
-                            <div class="placeholder-overlay d-flex flex-column justify-content-center align-items-center text-muted bg-light rounded"
-                                style="height: 250px;">
-                                <i class="fa-solid fa-cogs fa-3x mb-3 text-secondary"></i>
-                                <span class="small fw-medium">Upload Brass Component Image 2</span>
+                <!-- Right Column: Form -->
+                <div class="lg:w-1/2">
+                    <div
+                        class="bg-white p-12 rounded-[2rem] shadow-[0_48px_80px_-16px_rgba(0,0,0,0.05)] border border-outline-variant/10">
+                        <h3 class="text-2xl font-bold mb-10 text-primary" style="">Send an Enquiry</h3>
+                        <form id="inquiry-form" class="space-y-6">
+                            <!-- Full Name -->
+                            <div class="space-y-2">
+                                <label class="text-xs font-bold text-primary" for="inquiry-name">Full Name</label>
+                                <input id="inquiry-name" name="name"
+                                    class="w-full border border-outline-variant/50 rounded-lg px-5 py-4 focus:border-secondary outline-none transition-colors"
+                                    placeholder="John Smith" type="text" required />
                             </div>
-                            <div class="card-body mt-3">
-                                <h4 class="card-title fw-bold text-dark">Custom Brass Components</h4>
-                                <p class="card-text text-muted">Precision turned and milled structural brass components
-                                    manufactured exactly to client blueprints.</p>
-                                <span class="btn btn-outline-primary-custom btn-sm rounded-pill px-3">Click to see
-                                    varieties</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <div class="text-center mt-5">
-                <p class="text-muted"><i class="fa-solid fa-circle-info me-2 text-primary-custom"></i> Need something
-                    specific? Use the inquiry form below and upload your drawings or references.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Inquiry Form Section -->
-    <section id="inquiry" class="py-5 bg-light position-relative">
-        <div class="container py-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="card border-0 shadow-lg p-md-5 p-4 rounded-4">
-                        <div class="text-center mb-5">
-                            <h2 class="fw-bold">Request a Quote</h2>
-                            <p class="text-muted">Fill out the form below with your requirements and our team will get
-                                back to you within 24 hours.</p>
-                        </div>
-
-                        <form id="quoteForm">
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <label for="firstName" class="form-label fw-medium">First Name</label>
-                                    <input type="text" class="form-control form-control-lg bg-light border-0"
-                                        id="firstName" required placeholder="John">
+                            <!-- Email & Phone -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="space-y-2">
+                                    <label class="text-xs font-bold text-primary" for="inquiry-email">Email
+                                        Address</label>
+                                    <input id="inquiry-email" name="email"
+                                        class="w-full border border-outline-variant/50 rounded-lg px-5 py-4 focus:border-secondary outline-none transition-colors"
+                                        placeholder="john@company.com" type="email" required />
                                 </div>
-                                <div class="col-md-6">
-                                    <label for="lastName" class="form-label fw-medium">Last Name</label>
-                                    <input type="text" class="form-control form-control-lg bg-light border-0"
-                                        id="lastName" required placeholder="Doe">
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="email" class="form-label fw-medium">Email Address</label>
-                                    <input type="email" class="form-control form-control-lg bg-light border-0"
-                                        id="email" required placeholder="john@example.com">
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="phone" class="form-label fw-medium">Phone Number</label>
-                                    <input type="tel" class="form-control form-control-lg bg-light border-0" id="phone"
-                                        placeholder="+1 (555) 000-0000">
-                                </div>
-                                <div class="col-12">
-                                    <label for="productInterest" class="form-label fw-medium">Product Category</label>
-                                    <select id="productInterest" class="form-select form-select-lg bg-light border-0">
-                                        <option selected>Select an option...</option>
-                                        <option value="cable_glands">Brass Cable Glands</option>
-                                        <option value="custom_components">Custom Brass Components</option>
-                                        <option value="other">Other Accessories</option>
-                                    </select>
-                                </div>
-                                <div class="col-12">
-                                    <label for="message" class="form-label fw-medium">Requirements Details</label>
-                                    <textarea class="form-control form-control-lg bg-light border-0" id="message"
-                                        rows="4" required
-                                        placeholder="Please provide sizes, quantities, and any specific requirements."></textarea>
-                                </div>
-                                <!-- External Image / Drawing upload field -->
-                                <div class="col-12 mt-4">
-                                    <label for="referenceFile" class="form-label fw-medium">Upload Reference or Drawing
-                                        (Optional)</label>
-                                    <input class="form-control form-control-lg bg-light border-0" type="file"
-                                        id="referenceFile" accept="image/*,.pdf,.doc,.docx">
-                                    <div class="form-text mt-2"><i class="fa-solid fa-paperclip me-1"></i> Attach your
-                                        external images, schematics, or reference files here.</div>
-                                </div>
-                                <div class="col-12 mt-5">
-                                    <button type="submit" class="btn btn-primary-custom w-100 btn-lg shadow-sm">Submit
-                                        Inquiry</button>
+                                <div class="space-y-2">
+                                    <label class="text-xs font-bold text-primary" for="inquiry-phone">Phone
+                                        Number</label>
+                                    <input id="inquiry-phone" name="phone"
+                                        class="w-full border border-outline-variant/50 rounded-lg px-5 py-4 focus:border-secondary outline-none transition-colors"
+                                        placeholder="+91 98765 43210" type="tel" required />
                                 </div>
                             </div>
+                            <!-- City & State -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="space-y-2">
+                                    <label class="text-xs font-bold text-primary" for="inquiry-city">City</label>
+                                    <input id="inquiry-city" name="city"
+                                        class="w-full border border-outline-variant/50 rounded-lg px-5 py-4 focus:border-secondary outline-none transition-colors"
+                                        placeholder="Jamnagar" type="text" required />
+                                </div>
+                                <div class="space-y-2">
+                                    <label class="text-xs font-bold text-primary" for="inquiry-state">State</label>
+                                    <input id="inquiry-state" name="state"
+                                        class="w-full border border-outline-variant/50 rounded-lg px-5 py-4 focus:border-secondary outline-none transition-colors"
+                                        placeholder="Gujarat" type="text" required />
+                                </div>
+                            </div>
+                            <!-- Company Name -->
+                            <div class="space-y-2">
+                                <label class="text-xs font-bold text-primary" for="inquiry-company">Company Name</label>
+                                <input id="inquiry-company" name="company"
+                                    class="w-full border border-outline-variant/50 rounded-lg px-5 py-4 focus:border-secondary outline-none transition-colors"
+                                    placeholder="Your Company Ltd." type="text" />
+                            </div>
+                            <!-- Product Selection -->
+                            <div class="space-y-2">
+                                <label class="text-xs font-bold text-primary" for="inquiry-product">Select
+                                    Product</label>
+                                <select id="inquiry-product" name="product"
+                                    class="w-full border border-outline-variant/50 rounded-lg px-5 py-4 focus:border-secondary outline-none transition-colors appearance-none bg-[url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M5%207.5L10%2012.5L15%207.5%22%20stroke%3D%22%236B7280%22%20stroke-width%3D%221.67%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%3C/svg%3E')] bg-[length:20px_20px] bg-[right_20px_center] bg-no-repeat"
+                                    required>
+                                    <option disabled="" selected="">Select a product...</option>
+                                    <option>PG &amp; Metric Cable Glands</option>
+                                    <option>Precision Components</option>
+                                    <option>Automotive Components</option>
+                                    <option>Electrical Components</option>
+                                    <option>Other / Custom Requirement</option>
+                                </select>
+                            </div>
+                            <!-- Message -->
+                            <div class="space-y-2">
+                                <label class="text-xs font-bold text-primary" for="inquiry-message">Message /
+                                    Specifications</label>
+                                <textarea id="inquiry-message" name="message"
+                                    class="w-full border border-outline-variant/50 rounded-lg px-5 py-4 focus:border-secondary outline-none transition-colors h-36 resize-none"
+                                    placeholder="Describe your requirement — quantity, size, tolerance, application..."></textarea>
+                            </div>
+                            <!-- Submit -->
+                            <button id="inquiry-submit-btn"
+                                class="w-full bg-[#0f0f0f] text-white py-5 rounded-xl font-bold flex items-center justify-center gap-3 hover:bg-black transition-all hover:scale-[1.01]"
+                                style="" type="submit">
+                                <span id="btn-text">Submit Enquiry</span>
+                                <span class="material-symbols-outlined text-xl" data-icon="arrow_forward"
+                                    style="">arrow_forward</span>
+                            </button>
+                            <!-- Status Message -->
+                            <div id="form-status" class="text-center text-sm font-medium mt-2 hidden"></div>
                         </form>
-
-                        <!-- Success Message Holder -->
-                        <div id="formSuccess" class="alert alert-success mt-4 d-none" role="alert">
-                            <i class="fa-solid fa-circle-check me-2"></i> Thank you! Your inquiry has been submitted
-                            successfully. We will be in touch shortly.
-                        </div>
-
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
+        </section>
+    </main>
     <!-- Footer -->
-    <footer class="bg-dark text-white py-5">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-4 pe-lg-5">
-                    <a class="navbar-brand fw-bold text-white fs-4 d-inline-block mb-3" href="#hero">
-                        <i class="fa-solid fa-industry text-primary-custom me-2"></i>VebX
-                    </a>
-                    <p class="text-secondary">Your premier manufacturing partner for high-quality brass cable glands and
-                        precision machined components.</p>
-                    <div class="d-flex gap-3 mt-4">
-                        <a href="#" class="text-white opacity-75 hover-opacity-100"><i
-                                class="fa-brands fa-linkedin fa-lg"></i></a>
-                        <a href="#" class="text-white opacity-75 hover-opacity-100"><i
-                                class="fa-brands fa-twitter fa-lg"></i></a>
-                        <a href="#" class="text-white opacity-75 hover-opacity-100"><i
-                                class="fa-brands fa-facebook fa-lg"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-6">
-                    <h5 class="fw-bold mb-3 text-white">Quick Links</h5>
-                    <ul class="list-unstyled footer-links">
-                        <li class="mb-2"><a href="#hero"
-                                class="text-secondary text-decoration-none hover-white">Home</a></li>
-                        <li class="mb-2"><a href="#about" class="text-secondary text-decoration-none hover-white">About
-                                Us</a></li>
-                        <li class="mb-2"><a href="#why-choose-us"
-                                class="text-secondary text-decoration-none hover-white">Why Choose Us</a></li>
-                        <li class="mb-2"><a href="#products"
-                                class="text-secondary text-decoration-none hover-white">Products</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="fw-bold mb-3 text-white">Products</h5>
-                    <ul class="list-unstyled footer-links">
-                        <li class="mb-2"><a href="#products"
-                                class="text-secondary text-decoration-none hover-white">Cable Glands</a></li>
-                        <li class="mb-2"><a href="#products"
-                                class="text-secondary text-decoration-none hover-white">Custom Machining</a></li>
-                        <li class="mb-2"><a href="#products"
-                                class="text-secondary text-decoration-none hover-white">Brass Fittings</a></li>
-                        <li class="mb-2"><a href="#products"
-                                class="text-secondary text-decoration-none hover-white">Accessories</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="fw-bold mb-3 text-white">Contact Info</h5>
-                    <address class="text-secondary">
-                        <p class="mb-2"><i class="fa-solid fa-location-dot me-2 text-primary-custom"></i> Plot No.
-                            K1-530-B, G.I.D.C, Phase - II, Dared, Jamnagar, Gujarat 361004</p>
-                        <p class="mb-2"><i class="fa-solid fa-phone me-2 text-primary-custom"></i> +91 97730 56458</p>
-                        <p class="mb-2"><i class="fa-solid fa-envelope me-2 text-primary-custom"></i>
-                            sales@Vebx.com</p>
-                    </address>
-                </div>
+    <footer class="w-full py-16 px-12 mt-auto bg-[#1a1a1a]">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 max-w-[1920px] mx-auto">
+            <div class="space-y-6">
+                <a href="index.html" class="inline-block group">
+                    <img src="image/logo.png" alt="VebX Logo"
+                        class="h-32 w-auto -my-6 brightness-0 invert transition-transform duration-300 group-hover:scale-[1.02]" />
+                </a>
+                <p class="font-['Inter'] text-xs uppercase tracking-widest text-white/40 leading-relaxed">
+                    © 2024 VebX Industrial Systems. <br />
+                    Plot No. K1-530-B, G.I.D.C, Phase - II, Dared, Jamnagar.
+                </p>
             </div>
-            <div class="border-top border-secondary mt-5 pt-4 text-center text-secondary small">
-                <p class="mb-0">&copy; <span id="currentYear"></span> VebX. All rights reserved.</p>
+            <div class="flex flex-col gap-4">
+                <span class="font-['Inter'] text-xs uppercase tracking-widest font-bold mb-2 text-white">Systems</span>
+                <a class="font-['Inter'] text-xs uppercase tracking-widest text-white/40 hover:text-white transition-colors"
+                    href="index.html">Home</a>
+                <a class="font-['Inter'] text-xs uppercase tracking-widest text-white/40 hover:text-white transition-colors"
+                    href="products.html">Our Products</a>
+            </div>
+            <div class="flex flex-col gap-4">
+                <span class="font-['Inter'] text-xs uppercase tracking-widest font-bold mb-2 text-white">Contact Info</span>
+                <a class="font-['Inter'] text-xs uppercase tracking-widest text-white/40 hover:text-white transition-colors"
+                    href="mailto:vebxbrassproducts@gmail.com">vebxbrassproducts@gmail.com</a>
+                <a class="font-['Inter'] text-xs uppercase tracking-widest text-white/40 hover:text-white transition-colors"
+                    href="tel:+919773056458">+91 97730 56458</a>
+                <a class="font-['Inter'] text-xs uppercase tracking-widest text-white/40 hover:text-white transition-colors"
+                    href="tel:+919428671098">+91 94286 71098</a>
+            </div>
+            <div class="flex flex-col gap-4">
+                <span class="font-['Inter'] text-xs uppercase tracking-widest font-bold mb-2 text-white">Support</span>
+                <a class="font-['Inter'] text-xs uppercase tracking-widest text-white/40 hover:text-white transition-colors"
+                    href="#inquiry">Contact Support</a>
+                <div class="flex gap-4 mt-4">
+                    <span
+                        class="material-symbols-outlined opacity-40 hover:opacity-100 cursor-pointer transition-opacity text-white"
+                        data-icon="share">share</span>
+                    <span
+                        class="material-symbols-outlined opacity-40 hover:opacity-100 cursor-pointer transition-opacity text-white"
+                        data-icon="hub">hub</span>
+                </div>
             </div>
         </div>
     </footer>
+    <!-- EmailJS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-    <!-- Modals for Product Varieties -->
-    <!-- Cable Glands Modal -->
-    <div class="modal fade" id="glandsModal" tabindex="-1" aria-labelledby="glandsModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content border-0 shadow-lg">
-                <div class="modal-header bg-light border-0">
-                    <h5 class="modal-title fw-bold text-primary-custom" id="glandsModalLabel">Cable Gland Varieties</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body py-4">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item d-flex align-items-center"><i
-                                class="fa-solid fa-check text-primary-custom me-3"></i> CW Type Cable Glands</li>
-                        <li class="list-group-item d-flex align-items-center"><i
-                                class="fa-solid fa-check text-primary-custom me-3"></i> BW Type Cable Glands</li>
-                        <li class="list-group-item d-flex align-items-center"><i
-                                class="fa-solid fa-check text-primary-custom me-3"></i> A2 Type Cable Glands</li>
-                        <li class="list-group-item d-flex align-items-center"><i
-                                class="fa-solid fa-check text-primary-custom me-3"></i> E1W Type Cable Glands</li>
-                        <li class="list-group-item d-flex align-items-center"><i
-                                class="fa-solid fa-check text-primary-custom me-3"></i> PG &amp; Metric Thread Glands
-                        </li>
-                    </ul>
-                </div>
-                <div class="modal-footer border-0 bg-light">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <a href="#inquiry" class="btn btn-primary-custom"
-                        onclick="document.querySelector('#glandsModal .btn-close').click()">Inquire Now</a>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- EmailJS Integration Script -->
+    <script>
+        // Initialize EmailJS with public key
+        (function () {
+            emailjs.init('2O8nrGkXaZijvX7Ke');
+        })();
 
-    <!-- Custom Components Modal -->
-    <div class="modal fade" id="componentsModal" tabindex="-1" aria-labelledby="componentsModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content border-0 shadow-lg">
-                <div class="modal-header bg-light border-0">
-                    <h5 class="modal-title fw-bold text-primary-custom" id="componentsModalLabel">Custom Component
-                        Varieties</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body py-4">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item d-flex align-items-center"><i
-                                class="fa-solid fa-check text-primary-custom me-3"></i> Precision Turned Parts</li>
-                        <li class="list-group-item d-flex align-items-center"><i
-                                class="fa-solid fa-check text-primary-custom me-3"></i> Brass Auto Parts</li>
-                        <li class="list-group-item d-flex align-items-center"><i
-                                class="fa-solid fa-check text-primary-custom me-3"></i> Electrical Pins &amp; Terminals
-                        </li>
-                        <li class="list-group-item d-flex align-items-center"><i
-                                class="fa-solid fa-check text-primary-custom me-3"></i> Sanitary Fittings &amp; Inserts
-                        </li>
-                        <li class="list-group-item d-flex align-items-center"><i
-                                class="fa-solid fa-check text-primary-custom me-3"></i> Custom Castings</li>
-                    </ul>
-                </div>
-                <div class="modal-footer border-0 bg-light">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <a href="#inquiry" class="btn btn-primary-custom"
-                        onclick="document.querySelector('#componentsModal .btn-close').click()">Send Specs</a>
-                </div>
-            </div>
-        </div>
-    </div>
+        // EmailJS Configuration
+        const EMAILJS_CONFIG = {
+            serviceId: 'service_5vewcsc',
+            adminTemplateId: 'template_kv73bvo',
+            autoReplyTemplateId: 'template_iwsg4yf'
+        };
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JS -->
-    <script src="js/script.js"></script>
+        // Get DOM elements
+        const form = document.getElementById('inquiry-form');
+        const submitBtn = document.getElementById('inquiry-submit-btn');
+        const btnText = document.getElementById('btn-text');
+        const formStatus = document.getElementById('form-status');
+
+        // Handle form submission
+        form.addEventListener('submit', function (e) {
+            e.preventDefault(); // Prevent page reload
+
+            // Disable button & show sending state
+            submitBtn.disabled = true;
+            submitBtn.classList.add('opacity-60', 'cursor-not-allowed');
+            btnText.textContent = 'Sending...';
+            formStatus.classList.add('hidden');
+
+            // Step 1: Send admin notification email with all form details
+            emailjs.sendForm(EMAILJS_CONFIG.serviceId, EMAILJS_CONFIG.adminTemplateId, form)
+                .then(function () {
+                    // Step 2: Send auto-reply to user
+                    return emailjs.sendForm(EMAILJS_CONFIG.serviceId, EMAILJS_CONFIG.autoReplyTemplateId, form);
+                })
+                .then(function () {
+                    // Success — show message, reset form
+                    showStatus('✓ Inquiry sent successfully! We\'ll get back to you shortly.', 'success');
+                    form.reset();
+                })
+                .catch(function (error) {
+                    // Error — show error message
+                    console.error('EmailJS Error:', error);
+                    showStatus('✗ Failed to send inquiry. Please try again or email us directly.', 'error');
+                })
+                .finally(function () {
+                    // Re-enable button
+                    submitBtn.disabled = false;
+                    submitBtn.classList.remove('opacity-60', 'cursor-not-allowed');
+                    btnText.textContent = 'Submit Enquiry';
+                });
+        });
+
+        // Show status message with appropriate styling
+        function showStatus(message, type) {
+            formStatus.textContent = message;
+            formStatus.classList.remove('hidden', 'text-green-600', 'text-red-500');
+            formStatus.classList.add(type === 'success' ? 'text-green-600' : 'text-red-500');
+
+            // Auto-hide success message after 8 seconds
+            if (type === 'success') {
+                setTimeout(function () {
+                    formStatus.classList.add('hidden');
+                }, 8000);
+            }
+        }
+    </script>
 </body>
 
 </html>
