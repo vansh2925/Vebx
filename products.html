@@ -101,9 +101,20 @@
         }
 
         @keyframes fadeSlide {
-            0%, 45% { opacity: 1; }
-            50%, 95% { opacity: 0; }
-            100% { opacity: 1; }
+
+            0%,
+            45% {
+                opacity: 1;
+            }
+
+            50%,
+            95% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
         }
     </style>
 </head>
@@ -160,72 +171,207 @@
         </header>
 
         <!-- Product Grid -->
-        <div class="grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
 
             <!-- Product Card: PG & Metric Cable Glands -->
-            <a href="index.html#inquiry" class="group flex flex-col">
-                <div class="aspect-square bg-surface-container-lowest border border-surface-container-high rounded-xl relative overflow-hidden mb-4 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-500">
-                    <img alt="PG Cable Gland"
-                        class="absolute inset-0 w-full h-full object-contain p-6 group-hover:scale-110 transition-transform duration-700 opacity-90 animate-[fadeSlide_6s_ease-in-out_infinite]" 
-                        src="image/pg.jpg" />
-                    <img alt="Metric Cable Gland"
-                        class="absolute inset-0 w-full h-full object-contain p-6 group-hover:scale-110 transition-transform duration-700 opacity-90 animate-[fadeSlide_6s_ease-in-out_3s_infinite]"
-                        src="image/metric.jpg" />
-                    <div class="absolute top-3 left-3 z-10">
-                        <span
-                            class="bg-secondary text-primary px-2 py-1 rounded text-[8px] sm:text-[10px] font-black tracking-widest uppercase">Universal</span>
+            <a href="index.html#inquiry" class="group relative">
+                <div
+                    class="relative rounded-[1.5rem] p-[1px] bg-gradient-to-b from-white/20 via-white/5 to-transparent overflow-hidden transition-all duration-500 hover:shadow-[0_20px_60px_-15px_rgba(253,195,77,0.15)]">
+                    <!-- Inner Card -->
+                    <div class="relative bg-[#0a0a0a] rounded-[calc(1.5rem-1px)] overflow-hidden">
+                        <!-- Image Container -->
+                        <div class="relative aspect-square overflow-hidden bg-[#f5f3f0] rounded-t-[calc(1.5rem-1px)]">
+                            <img alt="PG Cable Gland"
+                                class="absolute inset-0 w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-700 ease-out animate-[fadeSlide_6s_ease-in-out_0.5s_infinite]"
+                                src="image/pg.jpg" />
+                            <img alt="Metric Cable Gland"
+                                class="absolute inset-0 w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-700 ease-out animate-[fadeSlide_6s_ease-in-out_2.5s_infinite]"
+                                src="image/metric.jpg" />
+                            <img alt="Metric Cable Gland 2"
+                                class="absolute inset-0 w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-700 ease-out animate-[fadeSlide_6s_ease-in-out_4.5s_infinite]"
+                                src="image/metric2.jpg" />
+                            <!-- Bottom Gradient Fade -->
+                            <div
+                                class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#0a0a0a] to-transparent pointer-events-none z-10">
+                            </div>
+                            <!-- Badge -->
+                            <div class="absolute top-4 left-4 z-20">
+                                <span
+                                    class="inline-flex items-center gap-1.5 bg-black/60 backdrop-blur-md border border-white/10 text-white/90 px-3 py-1.5 rounded-full text-[9px] font-bold tracking-[0.15em] uppercase">
+                                    <span
+                                        class="w-1.5 h-1.5 rounded-full bg-secondary-container shadow-[0_0_6px_#fdc34d]"></span>
+                                    Universal
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Content Overlay -->
+                        <div class="relative z-20 px-6 pb-6 -mt-6">
+                            <h3 class="font-headline text-base font-bold tracking-tight text-white mb-2">PG &amp; Metric
+                                Cable Glands</h3>
+                            <p class="text-[11px] text-white/40 leading-relaxed mb-4">Industrial-grade cable termination
+                                solutions for PG &amp; Metric thread types.</p>
+                            <div class="flex items-center justify-between">
+                                <span class="text-[10px] font-semibold uppercase tracking-widest text-white/30">Send an
+                                    Enquiry</span>
+                                <div
+                                    class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-secondary-container group-hover:border-secondary-container/50 transition-all duration-300">
+                                    <span
+                                        class="material-symbols-outlined text-white/40 group-hover:text-[#0a0a0a] text-sm transition-colors duration-300">arrow_forward</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <h3 class="font-headline text-sm md:text-base font-bold tracking-tight text-primary text-center">PG &amp; Metric Cable Glands</h3>
             </a>
-            <!-- Product Card 6: Precision Turned Parts -->
-            <a href="index.html#inquiry" class="group flex flex-col">
-                <div class="aspect-square bg-surface-container-lowest border border-surface-container-high rounded-xl relative overflow-hidden mb-4 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-500">
-                    <img alt="Precision Components"
-                        class="w-full h-full object-contain p-6 group-hover:scale-110 transition-transform duration-700 opacity-90"
-                        src="image/precision components.jpeg" />
-                    <div class="absolute top-3 left-3">
-                        <span
-                            class="bg-secondary text-primary px-2 py-1 rounded text-[8px] sm:text-[10px] font-black tracking-widest uppercase">Most
-                            Popular</span>
+
+            <!-- Product Card: Precision Components -->
+            <a href="index.html#inquiry" class="group relative">
+                <div
+                    class="relative rounded-[1.5rem] p-[1px] bg-gradient-to-b from-secondary/30 via-white/5 to-transparent overflow-hidden transition-all duration-500 hover:shadow-[0_20px_60px_-15px_rgba(253,195,77,0.15)]">
+                    <!-- Inner Card -->
+                    <div class="relative bg-[#0a0a0a] rounded-[calc(1.5rem-1px)] overflow-hidden">
+                        <!-- Image Container -->
+                        <div class="relative aspect-square overflow-hidden bg-[#f5f3f0] rounded-t-[calc(1.5rem-1px)]">
+                            <img alt="Precision Components"
+                                class="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-700 ease-out"
+                                src="image/precision components.jpeg" />
+                            <!-- Bottom Gradient Fade -->
+                            <div
+                                class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#0a0a0a] to-transparent pointer-events-none z-10">
+                            </div>
+                            <!-- Badge -->
+                            <div class="absolute top-4 left-4 z-20">
+                                <span
+                                    class="inline-flex items-center gap-1.5 bg-black/60 backdrop-blur-md border border-secondary-container/30 text-secondary-container px-3 py-1.5 rounded-full text-[9px] font-bold tracking-[0.15em] uppercase">
+                                    <span
+                                        class="w-1.5 h-1.5 rounded-full bg-secondary-container shadow-[0_0_6px_#fdc34d] animate-pulse"></span>
+                                    Most Popular
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Content Overlay -->
+                        <div class="relative z-20 px-6 pb-6 -mt-6">
+                            <h3 class="font-headline text-base font-bold tracking-tight text-white mb-2">Precision
+                                Components</h3>
+                            <p class="text-[11px] text-white/40 leading-relaxed mb-4">CNC-machined brass components with
+                                ±0.01mm accuracy tolerances.</p>
+                            <div class="flex items-center justify-between">
+                                <span class="text-[10px] font-semibold uppercase tracking-widest text-white/30">Send an
+                                    Enquiry</span>
+                                <div
+                                    class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-secondary-container group-hover:border-secondary-container/50 transition-all duration-300">
+                                    <span
+                                        class="material-symbols-outlined text-white/40 group-hover:text-[#0a0a0a] text-sm transition-colors duration-300">arrow_forward</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <h3 class="font-headline text-sm md:text-base font-bold tracking-tight text-primary text-center">Precision Components</h3>
             </a>
-            <!-- Product Card 7: Brass Auto Parts -->
-            <a href="index.html#inquiry" class="group flex flex-col">
-                <div class="aspect-square bg-surface-container-lowest border border-surface-container-high rounded-xl relative overflow-hidden mb-4 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-500">
-                    <img alt="Automotive Components"
-                        class="w-full h-full object-contain p-6 group-hover:scale-110 transition-transform duration-700 opacity-90"
-                        src="image/automotive components.jpeg" />
-                    <div class="absolute top-3 left-3">
-                        <span
-                            class="bg-secondary text-primary px-2 py-1 rounded text-[8px] sm:text-[10px] font-black tracking-widest uppercase">Automotive</span>
+
+            <!-- Product Card: Automotive Components -->
+            <a href="index.html#inquiry" class="group relative">
+                <div
+                    class="relative rounded-[1.5rem] p-[1px] bg-gradient-to-b from-white/20 via-white/5 to-transparent overflow-hidden transition-all duration-500 hover:shadow-[0_20px_60px_-15px_rgba(253,195,77,0.15)]">
+                    <!-- Inner Card -->
+                    <div class="relative bg-[#0a0a0a] rounded-[calc(1.5rem-1px)] overflow-hidden">
+                        <!-- Image Container -->
+                        <div class="relative aspect-square overflow-hidden bg-[#f5f3f0] rounded-t-[calc(1.5rem-1px)]">
+                            <img alt="Automotive Components"
+                                class="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-700 ease-out"
+                                src="image/automotive components.jpeg" />
+                            <!-- Bottom Gradient Fade -->
+                            <div
+                                class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#0a0a0a] to-transparent pointer-events-none z-10">
+                            </div>
+                            <!-- Badge -->
+                            <div class="absolute top-4 left-4 z-20">
+                                <span
+                                    class="inline-flex items-center gap-1.5 bg-black/60 backdrop-blur-md border border-white/10 text-white/90 px-3 py-1.5 rounded-full text-[9px] font-bold tracking-[0.15em] uppercase">
+                                    <span
+                                        class="w-1.5 h-1.5 rounded-full bg-emerald-400 shadow-[0_0_6px_#34d399]"></span>
+                                    Automotive
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Content Overlay -->
+                        <div class="relative z-20 px-6 pb-6 -mt-6">
+                            <h3 class="font-headline text-base font-bold tracking-tight text-white mb-2">Automotive
+                                Components</h3>
+                            <p class="text-[11px] text-white/40 leading-relaxed mb-4">High-performance brass parts for
+                                automotive electrical &amp; mechanical systems.</p>
+                            <div class="flex items-center justify-between">
+                                <span class="text-[10px] font-semibold uppercase tracking-widest text-white/30">Send an
+                                    Enquiry</span>
+                                <div
+                                    class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-secondary-container group-hover:border-secondary-container/50 transition-all duration-300">
+                                    <span
+                                        class="material-symbols-outlined text-white/40 group-hover:text-[#0a0a0a] text-sm transition-colors duration-300">arrow_forward</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <h3 class="font-headline text-sm md:text-base font-bold tracking-tight text-primary text-center">Automotive Components</h3>
             </a>
-            <!-- Product Card 8: Electrical Pins & Terminals -->
-            <a href="index.html#inquiry" class="group flex flex-col">
-                <div class="aspect-square bg-surface-container-lowest border border-surface-container-high rounded-xl relative overflow-hidden mb-4 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-500">
-                    <img alt="Electrical Components"
-                        class="w-full h-full object-contain p-6 group-hover:scale-110 transition-transform duration-700 opacity-90"
-                        src="image/electrical components.jpeg" />
-                    <div class="absolute top-3 left-3">
-                        <span
-                            class="bg-secondary text-primary px-2 py-1 rounded text-[8px] sm:text-[10px] font-black tracking-widest uppercase">Electronics</span>
+
+            <!-- Product Card: Electrical Components -->
+            <a href="index.html#inquiry" class="group relative">
+                <div
+                    class="relative rounded-[1.5rem] p-[1px] bg-gradient-to-b from-white/20 via-white/5 to-transparent overflow-hidden transition-all duration-500 hover:shadow-[0_20px_60px_-15px_rgba(253,195,77,0.15)]">
+                    <!-- Inner Card -->
+                    <div class="relative bg-[#0a0a0a] rounded-[calc(1.5rem-1px)] overflow-hidden">
+                        <!-- Image Container -->
+                        <div class="relative aspect-square overflow-hidden bg-[#f5f3f0] rounded-t-[calc(1.5rem-1px)]">
+                            <img alt="Electrical Components"
+                                class="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-700 ease-out"
+                                src="image/electrical components.jpeg" />
+                            <!-- Bottom Gradient Fade -->
+                            <div
+                                class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#0a0a0a] to-transparent pointer-events-none z-10">
+                            </div>
+                            <!-- Badge -->
+                            <div class="absolute top-4 left-4 z-20">
+                                <span
+                                    class="inline-flex items-center gap-1.5 bg-black/60 backdrop-blur-md border border-white/10 text-white/90 px-3 py-1.5 rounded-full text-[9px] font-bold tracking-[0.15em] uppercase">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-blue-400 shadow-[0_0_6px_#60a5fa]"></span>
+                                    Electronics
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Content Overlay -->
+                        <div class="relative z-20 px-6 pb-6 -mt-6">
+                            <h3 class="font-headline text-base font-bold tracking-tight text-white mb-2">Electrical
+                                Components</h3>
+                            <p class="text-[11px] text-white/40 leading-relaxed mb-4">Precision pins, terminals &amp;
+                                connectors for electrical distribution systems.</p>
+                            <div class="flex items-center justify-between">
+                                <span class="text-[10px] font-semibold uppercase tracking-widest text-white/30">Send an
+                                    Enquiry</span>
+                                <div
+                                    class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-secondary-container group-hover:border-secondary-container/50 transition-all duration-300">
+                                    <span
+                                        class="material-symbols-outlined text-white/40 group-hover:text-[#0a0a0a] text-sm transition-colors duration-300">arrow_forward</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <h3 class="font-headline text-sm md:text-base font-bold tracking-tight text-primary text-center">Electrical Components</h3>
             </a>
+
         </div>
-        <!-- Pagination / Load More -->
-        <div class="mt-20 flex flex-col items-center">
+
+        <!-- CTA Section -->
+        <div class="mt-24 flex flex-col items-center text-center">
             <a href="index.html#inquiry"
-                class="bg-secondary-container text-on-secondary-container px-12 py-5 rounded-xl font-headline font-extrabold text-sm tracking-widest uppercase hover:opacity-90 transition-all shadow-xl shadow-secondary-container/20 mb-6 inline-block">
+                class="group inline-flex items-center gap-4 bg-secondary-container text-on-secondary-container px-10 py-4 rounded-full font-headline font-extrabold text-sm tracking-widest uppercase hover:shadow-[0_16px_40px_-8px_rgba(253,195,77,0.3)] hover:scale-[1.02] transition-all duration-300 mb-6">
                 Request a Custom Quote
+                <div
+                    class="w-7 h-7 rounded-full bg-[#0a0a0a]/20 flex items-center justify-center group-hover:bg-[#0a0a0a]/30 transition-colors">
+                    <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                </div>
             </a>
-            <p class="text-on-surface-variant/60 text-xs font-medium">Showing 8 of 42 precision engineered products</p>
+            <p class="text-on-surface-variant/50 text-xs font-medium tracking-wide">Explore our full catalog of
+                precision engineered products</p>
         </div>
     </main>
     <!-- Footer -->
@@ -249,7 +395,8 @@
                     href="products.html">Our Products</a>
             </div>
             <div class="flex flex-col gap-4">
-                <span class="font-['Inter'] text-xs uppercase tracking-widest font-bold mb-2 text-white">Contact Info</span>
+                <span class="font-['Inter'] text-xs uppercase tracking-widest font-bold mb-2 text-white">Contact
+                    Info</span>
                 <a class="font-['Inter'] text-xs uppercase tracking-widest text-white/40 hover:text-white transition-colors"
                     href="mailto:vebxbrassproducts@gmail.com">vebxbrassproducts@gmail.com</a>
                 <a class="font-['Inter'] text-xs uppercase tracking-widest text-white/40 hover:text-white transition-colors"
