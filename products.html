@@ -1,424 +1,303 @@
 <!DOCTYPE html>
-
-<html class="light" lang="en">
-
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Products | VebX Industrial Systems</title>
-    <link rel="icon" type="image/png" href="image/logo1.png" />
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;500;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "surface": "#fbf9f6",
-                        "surface-bright": "#fbf9f6",
-                        "surface-container-low": "#f5f3f0",
-                        "error": "#ba1a1a",
-                        "on-primary-container": "#858383",
-                        "on-primary-fixed": "#1c1b1b",
-                        "surface-container-highest": "#e4e2df",
-                        "background": "#fbf9f6",
-                        "tertiary-container": "#1d1b1a",
-                        "surface-tint": "#5f5e5e",
-                        "inverse-on-surface": "#f2f0ed",
-                        "on-secondary-fixed-variant": "#5d4200",
-                        "on-primary-fixed-variant": "#474646",
-                        "secondary": "#7b5800",
-                        "tertiary-fixed-dim": "#cac6c3",
-                        "on-surface-variant": "#444748",
-                        "on-secondary-fixed": "#271900",
-                        "primary-fixed-dim": "#c8c6c5",
-                        "on-tertiary-fixed-variant": "#484645",
-                        "error-container": "#ffdad6",
-                        "outline": "#747878",
-                        "on-secondary": "#ffffff",
-                        "surface-container-lowest": "#ffffff",
-                        "tertiary": "#000000",
-                        "surface-container": "#efeeeb",
-                        "primary-container": "#1c1b1b",
-                        "on-tertiary-fixed": "#1d1b1a",
-                        "secondary-container": "#fdc34d",
-                        "surface-container-high": "#eae8e5",
-                        "on-error": "#ffffff",
-                        "secondary-fixed-dim": "#f7bd48",
-                        "on-error-container": "#93000a",
-                        "primary-fixed": "#e5e2e1",
-                        "on-surface": "#1b1c1a",
-                        "outline-variant": "#c4c7c7",
-                        "on-primary": "#ffffff",
-                        "on-tertiary": "#ffffff",
-                        "surface-variant": "#e4e2df",
-                        "on-secondary-container": "#715000",
-                        "on-background": "#1b1c1a",
-                        "inverse-primary": "#c8c6c5",
-                        "inverse-surface": "#30312f",
-                        "on-tertiary-container": "#868381",
-                        "secondary-fixed": "#ffdea6",
-                        "primary": "#000000",
-                        "surface-dim": "#dbdad7"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                    "fontFamily": {
-                        "headline": ["Manrope"],
-                        "body": ["Inter"],
-                        "label": ["Inter"]
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-
-        .no-scrollbar::-webkit-scrollbar {
-            display: none;
-        }
-
-        .no-scrollbar {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
-
-        .dropdown:hover .dropdown-menu {
-            display: block;
-        }
-
-        @keyframes fadeSlide {
-
-            0%,
-            45% {
-                opacity: 1;
-            }
-
-            50%,
-            95% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products | VebX Industrial Systems</title>
+  <meta name="description" content="Browse the VebX industrial catalogue: PG &amp; metric cable glands, precision turned components, automotive and electrical components — CNC machined to ±0.01 mm in Jamnagar, India." />
+  <link rel="canonical" href="https://vebx.in/products.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="VebX Industrial Systems" />
+  <meta property="og:title" content="Products | VebX Industrial Systems" />
+  <meta property="og:description" content="PG &amp; metric cable glands, precision turned components, automotive and electrical components — CNC machined to ±0.01 mm." />
+  <meta property="og:url" content="https://vebx.in/products.html" />
+  <meta property="og:image" content="https://vebx.in/image/precision%20components.jpeg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" href="image/logo1.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/site.css" />
+  <script>document.documentElement.classList.add('js');</script>
 </head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<body class="bg-surface font-body text-on-surface">
-    <!-- TopNavBar -->
-    <nav
-        class="fixed top-0 w-full z-50 bg-[#fbf9f6]/80 backdrop-blur-3xl shadow-[0_32px_64px_-4px_rgba(27,28,26,0.08)]">
-        <div class="flex items-center justify-between px-12 py-4 max-w-[1920px] mx-auto">
-            <a href="index.html" class="flex items-center group">
-                <img src="image/logo.png" alt="VebX Logo"
-                    class="h-32 w-auto -my-10 mix-blend-multiply transition-transform duration-300 group-hover:scale-[1.02]" />
-            </a>
-            <div class="hidden md:flex items-center gap-10">
-                <a class="font-['Manrope'] font-medium tracking-tight text-sm text-[#0f0f0f]/60 hover:text-[#0f0f0f] transition-colors duration-300"
-                    href="index.html" style="">Home</a>
-                <a class="font-['Manrope'] font-medium tracking-tight text-sm text-[#0f0f0f]/60 hover:text-[#0f0f0f] transition-colors duration-300"
-                    href="products.html" style="">Products</a>
-                <a class="font-['Manrope'] font-medium tracking-tight text-sm text-[#0f0f0f]/60 hover:text-[#0f0f0f] transition-colors duration-300"
-                    href="index.html#about" style="">About VebX</a>
-                <a class="font-['Manrope'] font-medium tracking-tight text-sm text-[#0f0f0f]/60 hover:text-[#0f0f0f] transition-colors duration-300"
-                    href="index.html#why" style="">Why Us</a>
-                <a class="font-['Manrope'] font-medium tracking-tight text-sm text-[#0f0f0f]/60 hover:text-[#0f0f0f] transition-colors duration-300"
-                    href="index.html#inquiry" style="">Contact</a>
-            </div>
-            <div class="flex items-center gap-6">
-                <a class="bg-primary text-on-primary px-6 py-2.5 rounded-lg text-sm font-bold tracking-tight hover:scale-95 duration-200 transition-all ease-in-out"
-                    href="index.html#inquiry" style="">
-                    Get a Quote →
-                </a>
-            </div>
-        </div>
-    </nav>
-    <main class="pt-24 pb-20 max-w-[1920px] mx-auto px-12">
-        <!-- Breadcrumbs -->
-        <nav class="flex items-center gap-2 mb-12 overflow-x-auto no-scrollbar py-2">
-            <a class="text-xs uppercase tracking-widest text-on-surface-variant/60 hover:text-primary transition-colors"
-                href="index.html">Home</a>
-            <span class="material-symbols-outlined text-[10px] text-on-surface-variant/40">chevron_right</span>
-            <span class="text-xs uppercase tracking-widest text-primary font-bold">Products</span>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img class="brand-mark" src="image/logo1.png" alt="" width="34" height="34" />
+        <span>
+          <span class="brand-word">VebX</span>
+          <span class="brand-tag">Crafting Perfection</span>
+        </span>
+      </a>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="products.html" aria-current="page">Products</a>
+        <a class="nav-link" href="index.html#capabilities">Capabilities</a>
+        <a class="nav-link" href="index.html#about">About</a>
+        <a class="nav-link" href="index.html#inquiry">Contact</a>
+        <a class="btn btn-primary btn-sm" href="index.html#inquiry">Request a Quote</a>
+      </nav>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+      <div class="page-head">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span aria-hidden="true">/</span>
+          <span aria-current="page">Products</span>
         </nav>
-        <!-- Category Header -->
-        <header class="mb-16 grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
-            <div class="lg:col-span-7">
-                <h1 class="font-headline text-6xl font-extrabold tracking-tighter text-primary mb-6 leading-[0.9]">
-                    Precision Engineered<br />Products.
-                </h1>
-                <p class="text-on-surface-variant text-lg max-w-xl leading-relaxed">
-                    Designed for heavy-duty industrial environments. Our products ensure top-tier quality,
-                    precision, and reliability across every application.
-                </p>
+        <span class="eyebrow">Industrial Catalogue</span>
+        <h1>Precision engineered products.</h1>
+        <p class="lead">Designed for heavy-duty industrial environments. Our products ensure top-tier quality, precision and reliability across every application.</p>
+        <nav class="chip-row" aria-label="Product categories">
+          <a class="chip chip--light" href="#pg-metric-cable-glands"><span class="dot"></span>Cable Glands</a>
+          <a class="chip chip--light" href="#precision-components"><span class="dot"></span>Precision Components</a>
+          <a class="chip chip--light" href="#automotive-components"><span class="dot"></span>Automotive</a>
+          <a class="chip chip--light" href="#electrical-components"><span class="dot"></span>Electrical</a>
+        </nav>
+      </div>
+
+      <!-- PG & Metric Cable Glands -->
+      <section class="cat-section" id="pg-metric-cable-glands">
+        <div class="cat-grid">
+          <div class="cat-media reveal" data-gallery>
+            <div class="frame">
+              <img data-gallery-main src="image/pg.jpg" alt="PG and metric brass cable glands" width="1600" height="1200" decoding="async" />
             </div>
-
-        </header>
-
-        <!-- Product Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-
-            <!-- Product Card: PG & Metric Cable Glands -->
-            <a href="index.html#inquiry" class="group relative">
-                <div
-                    class="relative rounded-[1.5rem] p-[1px] bg-gradient-to-b from-white/20 via-white/5 to-transparent overflow-hidden transition-all duration-500 hover:shadow-[0_20px_60px_-15px_rgba(253,195,77,0.15)]">
-                    <!-- Inner Card -->
-                    <div class="relative bg-[#0a0a0a] rounded-[calc(1.5rem-1px)] overflow-hidden">
-                        <!-- Image Container -->
-                        <div class="relative aspect-square overflow-hidden bg-[#f5f3f0] rounded-t-[calc(1.5rem-1px)]">
-                            <img alt="PG Cable Gland"
-                                class="absolute inset-0 w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-700 ease-out animate-[fadeSlide_6s_ease-in-out_0.5s_infinite]"
-                                src="image/pg.jpg" />
-                            <img alt="Metric Cable Gland"
-                                class="absolute inset-0 w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-700 ease-out animate-[fadeSlide_6s_ease-in-out_2.5s_infinite]"
-                                src="image/metric.jpg" />
-                            <img alt="Metric Cable Gland 2"
-                                class="absolute inset-0 w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-700 ease-out animate-[fadeSlide_6s_ease-in-out_4.5s_infinite]"
-                                src="image/metric2.jpg" />
-                            <!-- Bottom Gradient Fade -->
-                            <div
-                                class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#0a0a0a] to-transparent pointer-events-none z-10">
-                            </div>
-                            <!-- Badge -->
-                            <div class="absolute top-4 left-4 z-20">
-                                <span
-                                    class="inline-flex items-center gap-1.5 bg-black/60 backdrop-blur-md border border-white/10 text-white/90 px-3 py-1.5 rounded-full text-[9px] font-bold tracking-[0.15em] uppercase">
-                                    <span
-                                        class="w-1.5 h-1.5 rounded-full bg-secondary-container shadow-[0_0_6px_#fdc34d]"></span>
-                                    Universal
-                                </span>
-                            </div>
-                        </div>
-                        <!-- Content Overlay -->
-                        <div class="relative z-20 px-6 pb-6 -mt-6">
-                            <h3 class="font-headline text-base font-bold tracking-tight text-white mb-2">PG &amp; Metric
-                                Cable Glands</h3>
-                            <p class="text-[11px] text-white/40 leading-relaxed mb-4">Industrial-grade cable termination
-                                solutions for PG &amp; Metric thread types.</p>
-                            <div class="flex items-center justify-between">
-                                <span class="text-[10px] font-semibold uppercase tracking-widest text-white/30">Send an
-                                    Enquiry</span>
-                                <div
-                                    class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-secondary-container group-hover:border-secondary-container/50 transition-all duration-300">
-                                    <span
-                                        class="material-symbols-outlined text-white/40 group-hover:text-[#0a0a0a] text-sm transition-colors duration-300">arrow_forward</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- Product Card: Precision Components -->
-            <a href="index.html#inquiry" class="group relative">
-                <div
-                    class="relative rounded-[1.5rem] p-[1px] bg-gradient-to-b from-secondary/30 via-white/5 to-transparent overflow-hidden transition-all duration-500 hover:shadow-[0_20px_60px_-15px_rgba(253,195,77,0.15)]">
-                    <!-- Inner Card -->
-                    <div class="relative bg-[#0a0a0a] rounded-[calc(1.5rem-1px)] overflow-hidden">
-                        <!-- Image Container -->
-                        <div class="relative aspect-square overflow-hidden bg-[#f5f3f0] rounded-t-[calc(1.5rem-1px)]">
-                            <img alt="Precision Components"
-                                class="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-700 ease-out"
-                                src="image/precision components.jpeg" />
-                            <!-- Bottom Gradient Fade -->
-                            <div
-                                class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#0a0a0a] to-transparent pointer-events-none z-10">
-                            </div>
-                            <!-- Badge -->
-                            <div class="absolute top-4 left-4 z-20">
-                                <span
-                                    class="inline-flex items-center gap-1.5 bg-black/60 backdrop-blur-md border border-secondary-container/30 text-secondary-container px-3 py-1.5 rounded-full text-[9px] font-bold tracking-[0.15em] uppercase">
-                                    <span
-                                        class="w-1.5 h-1.5 rounded-full bg-secondary-container shadow-[0_0_6px_#fdc34d] animate-pulse"></span>
-                                    Most Popular
-                                </span>
-                            </div>
-                        </div>
-                        <!-- Content Overlay -->
-                        <div class="relative z-20 px-6 pb-6 -mt-6">
-                            <h3 class="font-headline text-base font-bold tracking-tight text-white mb-2">Precision
-                                Components</h3>
-                            <p class="text-[11px] text-white/40 leading-relaxed mb-4">CNC-machined brass components with
-                                ±0.01mm accuracy tolerances.</p>
-                            <div class="flex items-center justify-between">
-                                <span class="text-[10px] font-semibold uppercase tracking-widest text-white/30">Send an
-                                    Enquiry</span>
-                                <div
-                                    class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-secondary-container group-hover:border-secondary-container/50 transition-all duration-300">
-                                    <span
-                                        class="material-symbols-outlined text-white/40 group-hover:text-[#0a0a0a] text-sm transition-colors duration-300">arrow_forward</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- Product Card: Automotive Components -->
-            <a href="index.html#inquiry" class="group relative">
-                <div
-                    class="relative rounded-[1.5rem] p-[1px] bg-gradient-to-b from-white/20 via-white/5 to-transparent overflow-hidden transition-all duration-500 hover:shadow-[0_20px_60px_-15px_rgba(253,195,77,0.15)]">
-                    <!-- Inner Card -->
-                    <div class="relative bg-[#0a0a0a] rounded-[calc(1.5rem-1px)] overflow-hidden">
-                        <!-- Image Container -->
-                        <div class="relative aspect-square overflow-hidden bg-[#f5f3f0] rounded-t-[calc(1.5rem-1px)]">
-                            <img alt="Automotive Components"
-                                class="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-700 ease-out"
-                                src="image/automotive components.jpeg" />
-                            <!-- Bottom Gradient Fade -->
-                            <div
-                                class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#0a0a0a] to-transparent pointer-events-none z-10">
-                            </div>
-                            <!-- Badge -->
-                            <div class="absolute top-4 left-4 z-20">
-                                <span
-                                    class="inline-flex items-center gap-1.5 bg-black/60 backdrop-blur-md border border-white/10 text-white/90 px-3 py-1.5 rounded-full text-[9px] font-bold tracking-[0.15em] uppercase">
-                                    <span
-                                        class="w-1.5 h-1.5 rounded-full bg-emerald-400 shadow-[0_0_6px_#34d399]"></span>
-                                    Automotive
-                                </span>
-                            </div>
-                        </div>
-                        <!-- Content Overlay -->
-                        <div class="relative z-20 px-6 pb-6 -mt-6">
-                            <h3 class="font-headline text-base font-bold tracking-tight text-white mb-2">Automotive
-                                Components</h3>
-                            <p class="text-[11px] text-white/40 leading-relaxed mb-4">High-performance brass parts for
-                                automotive electrical &amp; mechanical systems.</p>
-                            <div class="flex items-center justify-between">
-                                <span class="text-[10px] font-semibold uppercase tracking-widest text-white/30">Send an
-                                    Enquiry</span>
-                                <div
-                                    class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-secondary-container group-hover:border-secondary-container/50 transition-all duration-300">
-                                    <span
-                                        class="material-symbols-outlined text-white/40 group-hover:text-[#0a0a0a] text-sm transition-colors duration-300">arrow_forward</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- Product Card: Electrical Components -->
-            <a href="index.html#inquiry" class="group relative">
-                <div
-                    class="relative rounded-[1.5rem] p-[1px] bg-gradient-to-b from-white/20 via-white/5 to-transparent overflow-hidden transition-all duration-500 hover:shadow-[0_20px_60px_-15px_rgba(253,195,77,0.15)]">
-                    <!-- Inner Card -->
-                    <div class="relative bg-[#0a0a0a] rounded-[calc(1.5rem-1px)] overflow-hidden">
-                        <!-- Image Container -->
-                        <div class="relative aspect-square overflow-hidden bg-[#f5f3f0] rounded-t-[calc(1.5rem-1px)]">
-                            <img alt="Electrical Components"
-                                class="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-700 ease-out"
-                                src="image/electrical components.jpeg" />
-                            <!-- Bottom Gradient Fade -->
-                            <div
-                                class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#0a0a0a] to-transparent pointer-events-none z-10">
-                            </div>
-                            <!-- Badge -->
-                            <div class="absolute top-4 left-4 z-20">
-                                <span
-                                    class="inline-flex items-center gap-1.5 bg-black/60 backdrop-blur-md border border-white/10 text-white/90 px-3 py-1.5 rounded-full text-[9px] font-bold tracking-[0.15em] uppercase">
-                                    <span class="w-1.5 h-1.5 rounded-full bg-blue-400 shadow-[0_0_6px_#60a5fa]"></span>
-                                    Electronics
-                                </span>
-                            </div>
-                        </div>
-                        <!-- Content Overlay -->
-                        <div class="relative z-20 px-6 pb-6 -mt-6">
-                            <h3 class="font-headline text-base font-bold tracking-tight text-white mb-2">Electrical
-                                Components</h3>
-                            <p class="text-[11px] text-white/40 leading-relaxed mb-4">Precision pins, terminals &amp;
-                                connectors for electrical distribution systems.</p>
-                            <div class="flex items-center justify-between">
-                                <span class="text-[10px] font-semibold uppercase tracking-widest text-white/30">Send an
-                                    Enquiry</span>
-                                <div
-                                    class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-secondary-container group-hover:border-secondary-container/50 transition-all duration-300">
-                                    <span
-                                        class="material-symbols-outlined text-white/40 group-hover:text-[#0a0a0a] text-sm transition-colors duration-300">arrow_forward</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
+            <div class="thumb-row" role="group" aria-label="Cable gland images">
+              <button class="thumb" type="button" aria-current="true" aria-label="Show cable gland image 1">
+                <img src="image/pg.jpg" data-full="image/pg.jpg" alt="" />
+              </button>
+              <button class="thumb" type="button" aria-label="Show cable gland image 2">
+                <img src="image/metric.jpg" data-full="image/metric.jpg" alt="" />
+              </button>
+              <button class="thumb" type="button" aria-label="Show cable gland image 3">
+                <img src="image/metric2.jpg" data-full="image/metric2.jpg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="cat-content reveal">
+            <span class="eyebrow">Cable Termination</span>
+            <h2>PG &amp; Metric Cable Glands</h2>
+            <p>Industrial-grade cable termination solutions for PG &amp; Metric thread types — built for reliable performance in demanding installations.</p>
+            <table class="spec-table">
+              <tbody>
+                <tr>
+                  <th scope="row">Thread Types</th>
+                  <td>PG &amp; Metric</td>
+                </tr>
+                <tr>
+                  <th scope="row">Application</th>
+                  <td>Industrial cable termination</td>
+                </tr>
+                <tr>
+                  <th scope="row">Size Range &amp; Specs</th>
+                  <td>Available on request</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="cat-actions">
+              <a class="btn btn-primary" href="index.html?product=pg-metric-cable-glands#inquiry">
+                Send an Enquiry
+                <svg class="btn-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <!-- CTA Section -->
-        <div class="mt-24 flex flex-col items-center text-center">
-            <a href="index.html#inquiry"
-                class="group inline-flex items-center gap-4 bg-secondary-container text-on-secondary-container px-10 py-4 rounded-full font-headline font-extrabold text-sm tracking-widest uppercase hover:shadow-[0_16px_40px_-8px_rgba(253,195,77,0.3)] hover:scale-[1.02] transition-all duration-300 mb-6">
-                Request a Custom Quote
-                <div
-                    class="w-7 h-7 rounded-full bg-[#0a0a0a]/20 flex items-center justify-center group-hover:bg-[#0a0a0a]/30 transition-colors">
-                    <span class="material-symbols-outlined text-sm">arrow_forward</span>
-                </div>
-            </a>
-            <p class="text-on-surface-variant/50 text-xs font-medium tracking-wide">Explore our full catalog of
-                precision engineered products</p>
+      <!-- Precision Components -->
+      <section class="cat-section" id="precision-components">
+        <div class="cat-grid">
+          <div class="cat-media reveal">
+            <div class="frame">
+              <img src="image/precision components.jpeg" alt="CNC machined precision brass components" width="1600" height="1200" loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <div class="cat-content reveal">
+            <span class="eyebrow">CNC Machining</span>
+            <h2>Precision Components</h2>
+            <p>CNC-machined brass components with ±0.01 mm accuracy tolerances — from rapid prototypes to repeat production runs.</p>
+            <table class="spec-table">
+              <tbody>
+                <tr>
+                  <th scope="row">Machining</th>
+                  <td>CNC turned &amp; milled</td>
+                </tr>
+                <tr>
+                  <th scope="row">Tolerance</th>
+                  <td>±0.01 mm</td>
+                </tr>
+                <tr>
+                  <th scope="row">Materials</th>
+                  <td>Free-cutting brass IS 319, leaded brass &amp; copper alloys</td>
+                </tr>
+                <tr>
+                  <th scope="row">Dimensions &amp; Specs</th>
+                  <td>Available on request</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="cat-actions">
+              <a class="btn btn-primary" href="index.html?product=precision-components#inquiry">
+                Send an Enquiry
+                <svg class="btn-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
         </div>
-    </main>
-    <!-- Footer -->
-    <footer class="w-full py-16 px-12 mt-auto bg-[#1a1a1a]">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 max-w-[1920px] mx-auto">
-            <div class="space-y-6">
-                <a href="index.html" class="inline-block group">
-                    <img src="image/logo.png" alt="VebX Logo"
-                        class="h-32 w-auto -my-6 brightness-0 invert transition-transform duration-300 group-hover:scale-[1.02]" />
-                </a>
-                <p class="font-['Inter'] text-xs uppercase tracking-widest text-white/40 leading-relaxed">
-                    © 2024 VebX Industrial Systems. <br />
-                    Plot No. K1-530-B, G.I.D.C, Phase - II, Dared, Jamnagar.
-                </p>
+      </section>
+
+      <!-- Automotive Components -->
+      <section class="cat-section" id="automotive-components">
+        <div class="cat-grid">
+          <div class="cat-media reveal">
+            <div class="frame">
+              <img src="image/automotive components.jpeg" alt="Brass components for automotive electrical and mechanical systems" width="1600" height="1200" loading="lazy" decoding="async" />
             </div>
-            <div class="flex flex-col gap-4">
-                <span class="font-['Inter'] text-xs uppercase tracking-widest font-bold mb-2 text-white">Systems</span>
-                <a class="font-['Inter'] text-xs uppercase tracking-widest text-white/40 hover:text-white transition-colors"
-                    href="index.html">Home</a>
-                <a class="font-['Inter'] text-xs uppercase tracking-widest text-white/40 hover:text-white transition-colors"
-                    href="products.html">Our Products</a>
+          </div>
+          <div class="cat-content reveal">
+            <span class="eyebrow">Automotive</span>
+            <h2>Automotive Components</h2>
+            <p>High-performance brass parts for automotive electrical &amp; mechanical systems, machined to customer drawings.</p>
+            <table class="spec-table">
+              <tbody>
+                <tr>
+                  <th scope="row">Application</th>
+                  <td>Automotive electrical &amp; mechanical systems</td>
+                </tr>
+                <tr>
+                  <th scope="row">Material</th>
+                  <td>Brass</td>
+                </tr>
+                <tr>
+                  <th scope="row">Dimensions &amp; Specs</th>
+                  <td>Available on request</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="cat-actions">
+              <a class="btn btn-primary" href="index.html?product=automotive-components#inquiry">
+                Send an Enquiry
+                <svg class="btn-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
             </div>
-            <div class="flex flex-col gap-4">
-                <span class="font-['Inter'] text-xs uppercase tracking-widest font-bold mb-2 text-white">Contact
-                    Info</span>
-                <a class="font-['Inter'] text-xs uppercase tracking-widest text-white/40 hover:text-white transition-colors"
-                    href="mailto:vebxbrassproducts@gmail.com">vebxbrassproducts@gmail.com</a>
-                <a class="font-['Inter'] text-xs uppercase tracking-widest text-white/40 hover:text-white transition-colors"
-                    href="tel:+919773056458">+91 97730 56458</a>
-                <a class="font-['Inter'] text-xs uppercase tracking-widest text-white/40 hover:text-white transition-colors"
-                    href="tel:+919428671098">+91 94286 71098</a>
-            </div>
-            <div class="flex flex-col gap-4">
-                <span class="font-['Inter'] text-xs uppercase tracking-widest font-bold mb-2 text-white">Support</span>
-                <a class="font-['Inter'] text-xs uppercase tracking-widest text-white/40 hover:text-white transition-colors"
-                    href="index.html#inquiry">Contact Support</a>
-                <div class="flex gap-4 mt-4">
-                    <span
-                        class="material-symbols-outlined opacity-40 hover:opacity-100 cursor-pointer transition-opacity text-white"
-                        data-icon="share">share</span>
-                    <span
-                        class="material-symbols-outlined opacity-40 hover:opacity-100 cursor-pointer transition-opacity text-white"
-                        data-icon="hub">hub</span>
-                </div>
-            </div>
+          </div>
         </div>
-    </footer>
+      </section>
+
+      <!-- Electrical Components -->
+      <section class="cat-section" id="electrical-components">
+        <div class="cat-grid">
+          <div class="cat-media reveal">
+            <div class="frame">
+              <img src="image/electrical components.jpeg" alt="Precision pins, terminals and connectors for electrical distribution systems" width="1600" height="1200" loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <div class="cat-content reveal">
+            <span class="eyebrow">Electrical</span>
+            <h2>Electrical Components</h2>
+            <p>Precision pins, terminals &amp; connectors for electrical distribution systems — engineered for consistent conductivity and fit.</p>
+            <table class="spec-table">
+              <tbody>
+                <tr>
+                  <th scope="row">Product Types</th>
+                  <td>Pins, terminals &amp; connectors</td>
+                </tr>
+                <tr>
+                  <th scope="row">Application</th>
+                  <td>Electrical distribution systems</td>
+                </tr>
+                <tr>
+                  <th scope="row">Dimensions &amp; Specs</th>
+                  <td>Available on request</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="cat-actions">
+              <a class="btn btn-primary" href="index.html?product=electrical-components#inquiry">
+                Send an Enquiry
+                <svg class="btn-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- CTA band -->
+    <section class="cta-band">
+      <div class="container">
+        <h2>Need a custom component?</h2>
+        <p>Send us your drawings — we handle the rest, from material sourcing to finishing and delivery.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary btn-lg" href="index.html?product=other#inquiry">
+            Request a Custom Quote
+            <svg class="btn-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn btn-ondark btn-lg" href="tel:+919773056458">Call +91 97730 56458</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="footer-brand" href="index.html">
+            <img class="brand-mark" src="image/logo1.png" alt="" width="38" height="38" />
+            <span>
+              <span class="brand-word">VebX</span>
+              <span class="brand-tag">Crafting Perfection</span>
+            </span>
+          </a>
+          <p class="footer-blurb">Manufacturer of copper alloy products, precision components, accessories and spares — engineered in Jamnagar, India.</p>
+        </div>
+        <nav aria-label="Products">
+          <span class="footer-title">Products</span>
+          <div class="footer-links">
+            <a href="#pg-metric-cable-glands">PG &amp; Metric Cable Glands</a>
+            <a href="#precision-components">Precision Components</a>
+            <a href="#automotive-components">Automotive Components</a>
+            <a href="#electrical-components">Electrical Components</a>
+          </div>
+        </nav>
+        <nav aria-label="Company">
+          <span class="footer-title">Company</span>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#capabilities">Capabilities</a>
+            <a href="index.html#about">About VebX</a>
+            <a href="index.html#inquiry">Contact</a>
+          </div>
+        </nav>
+        <div>
+          <span class="footer-title">Contact</span>
+          <div class="footer-links">
+            <a href="mailto:vebxbrassproducts@gmail.com">vebxbrassproducts@gmail.com</a>
+            <a href="tel:+919773056458">+91 97730 56458</a>
+            <a href="tel:+919428671098">+91 94286 71098</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> VebX Metal Pvt Ltd. All rights reserved.</span>
+        <span>Plot No. K1-530-B, G.I.D.C, Phase - II, Dared, Jamnagar, Gujarat 361004</span>
+      </div>
+    </div>
+  </footer>
+
+  <script defer src="assets/js/site.js"></script>
 </body>
-
 </html>
